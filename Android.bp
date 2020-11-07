@@ -105,33 +105,15 @@ android_app_import {
 }
 
 android_app_import {
-    name: "ims",
-    owner: "xiaomi",
-
-    certificate: "platform",
-
-    dex_preopt: {
-        enabled: false,
-    },
-
-    privileged: true,
-    apk: "proprietary/priv-app/ims/ims.apk",
-
-}
-
-android_app_import {
-    name: "imssettings",
-    owner: "xiaomi",
-
-    certificate: "platform",
-
-    dex_preopt: {
-        enabled: false,
-    },
-
-    privileged: true,
-    apk: "proprietary/priv-app/imssettings/imssettings.apk",
-
+	name: "ims",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
@@ -158,18 +140,15 @@ android_app_import {
 }
 
 android_app_import {
-    name: "qcrilmsgtunnel",
-    owner: "xiaomi",
-
-    certificate: "platform",
-
-    dex_preopt: {
-        enabled: false,
-    },
-
-    privileged: true,
-    apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-
+	name: "qcrilmsgtunnel",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
